@@ -9,8 +9,20 @@
     </head>
     <body>
         <h1>Learning Web Development</h1>
-        <ul>
-            <li><a href="./accessible-resume/index.html">Accessible Resume</a></li>
-        </ul>
+        <div role="navigation">
+            <ul>
+                <li><a href="./accessible-resume/index.html">Accessible Resume</a></li>
+                <li><a href="./learn-angular/index.html">Learn Angular</a></li>
+            </ul>
+        </div>
+        <form role="form">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <span id="nameLabel">Name</span>
+                <input type="text" role="text" aria-labelledby="nameLabel">
+                <span id="emailLabel">Personal Email</span>
+                <input type="email" role="text" aria-labelledby="emailLabel">
+            </fieldset>
+        </form>
     </body>
 </html>
