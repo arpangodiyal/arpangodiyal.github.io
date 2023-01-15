@@ -1,0 +1,90 @@
+.hamburger-btn {
+    display: none;
+}
+
+.close-side-nav-btn {
+    display: none;
+}
+
+.search-container-main {
+	display: none;
+}
+
+@media(max-width: 950px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+    .hamburger-btn {
+        display: block;
+        background-color: #fff;
+        border: 3px solid #1864ab;
+    }
+    .hamburger-btn:focus {
+        outline: #1864ab solid 3px;
+    }
+    .hamburger-btn div {
+        height: 0.75rem;
+        width: 4rem;
+        background-color: #1864ab;
+        margin: 0.2rem;
+    }
+
+	.close-side-nav-btn {
+		display: block;
+		position: relative;
+		margin-bottom: 4rem;
+	}
+	.close-side-nav-btn button {
+		position: absolute;
+		right: 0;
+		background-color: #244F99;
+		color: #fff;
+		padding: 5px;
+		font-weight: bold;
+		border-width: 0;
+	}
+	.close-side-nav-btn button:focus {
+		outline: #be4bdb solid 5px;
+	}
+
+	.nav-links {
+        display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background-color: #1864ab;
+		color: #fff;
+		height: 100%;
+		margin: 0;
+		padding: 20px;
+	}
+	.close-side-nav {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	
+	.nav-link {
+	  text-decoration: none;
+	  font-size: 25px;
+	  color: #F5F5F5;
+	  display: block;
+	  margin-bottom: 3rem;
+	}
+}
+
+@media(max-width: 600px) {
+	.logo-container {
+		position: relative;
+	}
+	.search-container {
+		position: absolute;
+		top: 10rem;
+		left: 2rem;
+		width: 300px;
+	}
+}

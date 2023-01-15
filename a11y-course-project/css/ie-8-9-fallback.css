@@ -1,0 +1,45 @@
+.logo-container {
+    display: inline;
+}
+
+nav {
+    display: inline;
+}
+
+h1 {
+    display: inline;
+}
+
+.autocomplete {
+    display: inline;
+}
+
+.search-input {
+    display: inline;
+}
+
+.search-input input {
+    padding: 6px;
+    width: 350px;
+    position: relative;
+    left: 3px;
+    bottom: 9px;
+    margin-left: 30px;
+}
+
+.nav-links {
+    float: right;
+    padding-top: 10px;
+}
+
+.btn-link {
+    display: inline;
+}
+
+.national-identity-container {
+    padding: 5px 20px;
+}
+
+.card {
+    display: inline;
+}
