@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Accessibility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive-navigation.css" />
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" type="text/css" href="./css/ie-8-9-fallback.css" />
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img
+          src="../assets/img/emblem-dark.png"
+          alt="National emblem of India."
+        />
+        <h1>INDIA</h1>
+        <div class="search-container autocomplete">
+          <div class="search-input">
+            <input
+              id="search"
+              role="combobox"
+              class="search-bar"
+              placeholder="Search states,rivers,flora etc."
+              autocomplete="off"
+              aria-describedby="instructions"
+              aria-owns="results"
+              aria-expanded="false"
+            />
+            <button class="search-button" type="button">
+              <img src="../assets/img/search.svg" alt="Search" height="30" />
+            </button>
+          </div>
+          <ul id="results" role="listbox" class="autocomplete-results">
+            <!-- <li role="option" aria-selected="false" tabindex="-1">Alice</li>
+            <li role="option" aria-selected="false" tabindex="-1">Ben</li>
+            <li role="option" aria-selected="false" tabindex="-1">Charlie</li> -->
+          </ul>
+          <div id="instructions" class="visually-hidden" aria-live="assertive">
+            Search states,rivers,flora etc.
+          </div>
+        </div>
+      </div>
+      <nav>
+        <button
+          type="button"
+          aria-label="Open navigation menu"
+          class="hamburger-btn"
+        >
+          <div aria-hidden="true"></div>
+          <div aria-hidden="true"></div>
+          <div aria-hidden="true"></div>
+        </button>
+        <ul class="nav-links">
+          <li class="close-side-nav-btn">
+            <button aria-label="Close navigation menu" type="button">X</button>
+          </li>
+          <li class="btn-link">
+            <button class="nav-link home-btn">Home</button>
+          </li>
+          <li class="btn-link">
+            <button class="nav-link about-us-btn">About Us</button>
+          </li>
+          <li class="btn-link">
+            <button class="nav-link contact-us-btn">Contact Us</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="state" class="section-margin">
+        <h2>States</h2>
+        <div class="state-container"></div>
+      </section>
+      <section id="union-territory" class="section-margin">
+        <h2>Union Territories</h2>
+        <div class="ut-container"></div>
+      </section>
+      <section id="river" class="section-margin">
+        <h2>Rivers</h2>
+        <div class="river-container"></div>
+      </section>
+      <section id="national-parks" class="section-margin">
+        <h2>National Parks and Wildlife Sancturies</h2>
+        <div class="fauna-container"></div>
+      </section>
+      <section id="national-identities" class="section-margin">
+        <h2>National Identities</h2>
+        <div class="national-identity-container">
+          <section class="margin-bottom-3">
+            <h3>National flag</h3>
+            <div class="identity-card">
+              <img
+                src="../assets/img/flag.png"
+                alt="National flag of India"
+                class="nid-image"
+              />
+              <div>
+                <p>
+                  The National Flag is a horizontal tricolour of India saffron
+                  (kesaria) at the top, white in the middle and India green at
+                  the bottom in equal proportion. The ratio of width of the flag
+                  to its length is two to three. In the centre of the white band
+                  is a navy-blue wheel with 24 equally spaced spokes which
+                  represents the Ashoka Chakra.
+                </p>
+
+                <p>
+                  The design of the National Flag was adopted by the Constituent
+                  Assembly of India on 22 July 1947.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="margin-bottom-3">
+            <h3>National Animal</h3>
+            <div class="identity-card">
+              <img
+                src="../assets/img/tiger.png"
+                class="nid-image"
+                alt="National animal of India, Tiger"
+              />
+              <p>
+                The magnificent tiger, Panthera tigris is a striped animal. It
+                has a thick yellow coat of fur with dark stripes. The
+                combination of grace, strength, agility and enormous power has
+                earned the tiger its pride of place as the national animal of
+                India. Out of eight races of the species known, the Indian race,
+                the Royal Bengal Tiger, is found throughout the country except
+                in the north-western region and also in the neighbouring
+                countries, Nepal, Bhutan and Bangladesh. To check the dwindling
+                population of tigers in India, 'Project Tiger' was launched in
+                April 1973. So far, 27 tiger reserves have been established in
+                the country under this project, covering an area of 37,761 sq
+                km.
+              </p>
+            </div>
+          </section>
+          <section class="margin-bottom-3">
+            <h3>National Flower</h3>
+            <div class="identity-card">
+              <img
+                src="../assets/img/lotus.png"
+                class="nid-image"
+                alt="National flower of India, Lotus"
+              />
+              <p>
+                Lotus (Nelumbo Nucifera Gaertn) is the National Flower of India.
+                It is a sacred flower and occupies a unique position in the art
+                and mythology of ancient India and has been an auspicious symbol
+                of Indian culture since time immemorial. India is rich in flora.
+                Currently available data place India in the tenth position in
+                the world and fourth in Asia in plant diversity. From about 70
+                per cent geographical area surveyed so far, 47,000 species of
+                plants have been described by the Botanical Survey of India
+                (BSI).
+              </p>
+            </div>
+          </section>
+          <section class="margin-bottom-3">
+            <h3>National Bird</h3>
+            <div class="identity-card">
+              <img
+                src="../assets/img/peacock.png"
+                class="nid-image"
+                alt="National bird of India, Peacock"
+              />
+              <p>
+                The Indian peacock, Pavo cristatus, the national bird of India,
+                is a colourful, swan-sized bird, with a fan-shaped crest of
+                feathers, a white patch under the eye and a long, slender neck.
+                The male of the species is more colourful than the female, with
+                a glistening blue breast and neck and a spectacular bronze-green
+                tail of around 200 elongated feathers. The female is brownish,
+                slightly smaller than the male and lacks the tail. The elaborate
+                courtship dance of the male, fanning out the tail and preening
+                its feathers is a gorgeous sight.
+              </p>
+            </div>
+          </section>
+          <section class="margin-bottom-3">
+            <h3>National Tree</h3>
+            <div class="identity-card">
+              <img
+                src="../assets/img/banyan-tree.png"
+                class="nid-image"
+                alt="National tree of India, Bnayan tree"
+              />
+              <p>
+                Indian fig tree, Ficus bengalensis, whose branches root
+                themselves like new trees over a large area. The roots then give
+                rise to more trunks and branches. Because of this characteristic
+                and its longevity, this tree is considered immortal and is an
+                integral part of the myths and legends of India. Even today, the
+                banyan tree is the focal point of village life and the village
+                council meets under the shade of this tree.
+              </p>
+            </div>
+          </section>
+          <section class="margin-bottom-3">
+            <h3>National Emblem</h3>
+            <div class="identity-card">
+              <img
+                src="../assets/img/emblem.png"
+                class="nid-image"
+                alt="National emblem of India"
+              />
+              <div>
+                <p>
+                  The State Emblem is an adaptation of the Lion Capital of Asoka
+                  at Sarnath. In the original, there are four lions, mounted
+                  back to back, on a circular abacus, which itself rests on a
+                  bell-shaped lotus. The frieze of the abacus has sculptures in
+                  high relief of an elephant, a galloping horse, a bull and a
+                  lion separated by intervening Dharma Chakras.
+                </p>
+                <p>
+                  The profile of the Lion Capital showing three lions mounted on
+                  the abacus with a Dharma Chakra in the centre, a bull on the
+                  right and a galloping horse on the left, and outlines of
+                  Dharma Chakras on the extreme right and left was adopted as
+                  the State Emblem of India on January 26, 1950. The bell-shaped
+                  lotus was omitted. The motto Satyameva Jayate, which means
+                  'Truth Alone Triumphs', written in Devanagari script below the
+                  profile of the Lion Capital is part of the State Emblem of
+                  India
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="title-container">
+          <video controls width="250">
+            <source src="../assets/sample-video.mp4" type="video/mp4" />
+            This browser doesn't supports the video. Download the
+            <a href="../assets/sample-video.mp4">MP4</a> video.
+          </video>
+        </div>
+        <h3>Transcript</h3>
+        <p>
+          India's geography is better than you think. First let's talk about
+          defence, India has highest mountain chains on North and North-Eastern
+          borders The Himalayas. Indian coastline is 7500 km long. It has the
+          strongest navy in the Indian ocean. Lakshwadeep islands gives some
+          good strategical positions and enhances it's economy. It has good
+          proximity with the Gulf countries which gives it un-interrupted oil
+          and gas. India is somewhat at the center of the Earth.
+        </p>
+      </section>
+      <section id="contact-us">
+        <h2>Contact Us</h2>
+        <p class="margin-bottom-3">
+          To get updates and recieve articles related to India and it's culture you can subscribe to our newsletter.
+        </p>
+        <div class="success-notification-container" aria-live="polite"></div>
+        <form>
+          <fieldset>
+            <legend>Subscribe to our newsletter</legend>
+            <div class="form-control-container">
+              <label for="first-name">First name</label>
+              <input
+                type="text"
+                name="firstName"
+                id="first-name"
+                required
+                maxlength="45"
+              />
+            </div>
+            <div class="form-control-container">
+              <label for="last-name">Last name</label>
+              <input
+                type="text"
+                name="lastName"
+                id="last-name"
+                required
+                maxlength="45"
+              />
+            </div>
+            <div class="form-control-container">
+              <label for="email">Email</label>
+              <input type="email" id="email" required name="userEmail" />
+            </div>
+          </fieldset>
+          <div class="form-error"></div>
+          <button class="submit-form-btn" type="button">Submit</button>
+        </form>
+      </section>
+      <section id="about-us">
+        <h2>About Us</h2>
+        <p class="margin-bottom-3">
+          This website has been optimised for keyboard users and screen reader
+          users. It is also compatible with all versions of Internet Explorer
+          upto 9. Website scales well in different viewports.
+        </p>
+        <p class="margin-bottom-3">
+          Using the search bar you can search for states, flora and fauna,
+          rivers, union union territories of India. It is an autocomplete just
+          type a letter into the input and it will show you suggestions.
+        </p>
+        <audio controls src="../assets/sample-audio.mp3">
+          <a href="../assets/sample-audio.mp3"> Download audio </a>
+        </audio>
+        <h3>Transcript</h3>
+        <p>
+          India's geography is better than you think. First let's talk about
+          defence, India has highest mountain chains on North and North-Eastern
+          borders The Himalayas. Indian coastline is 7500 km long. It has the
+          strongest navy in the Indian ocean. Lakshwadeep islands gives some
+          good strategical positions and enhances it's economy. It has good
+          proximity with the Gulf countries which gives it un-interrupted oil
+          and gas. India is somewhat at the center of the Earth.
+        </p>
+      </section>
+      <section id="nothing-found">
+        <h3>Nothing found :C</h3>
+      </section>
+    </main>
+    <footer>
+      <div><h3>Arpan Godiyal</h3></div>
+      <div>
+        <a href="https://www.linkedin.com/in/arpan-godiyal-02a604145/"><img height="30" src="../assets/img/linkedin.png" alt="Arpan Godiyal LinkedIn"></a>
+        <a href="tel:+8506960591"><img src="../assets/img/call.png" alt="Call Arpan Godiyal"></a>
+        <a href="mailto:arpangodiyal24@gmail.com"><img height="30" src="../assets/img/mail.png" alt="Email Arpan Godiyal"></a>
+      </div>
+    </footer>
+    <script src="../dist/classList.js"></script>
+    <script src="../dist/bundle.js"></script>
+    <!-- <script src="./js/index.js" type="module"></script> -->
+  </body>
+</html>
