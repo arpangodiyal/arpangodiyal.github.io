@@ -1,0 +1,28 @@
+.about-me {
+
+  h2 {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    margin-bottom: 3.2rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  &__text-container {
+    width: 70%;
+  }
+
+  &__text {
+    font-size: $font-size-md;
+    line-height: 1.5;
+  }
+
+  &__icon {
+    height: 20rem;
+  }
+}

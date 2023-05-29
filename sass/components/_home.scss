@@ -1,11 +1,13 @@
 .home {
-  padding-top: 15rem;
   
   &__container {
     display: flex;
-    gap: 20rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+  }
+
+  &__name-container {
+    width: 70%;
   }
 
   &__link-container {

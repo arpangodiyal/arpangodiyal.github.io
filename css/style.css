@@ -27,6 +27,14 @@ body {
   justify-content: center;
 }
 
+.section-padding {
+  padding: 20rem 2rem 0 2rem;
+}
+
+nav {
+  max-width: 65rem;
+  margin: 0 auto;
+}
 nav .main-nav {
   display: flex;
   justify-content: space-around;
@@ -46,14 +54,13 @@ nav .main-nav__link:hover, nav .main-nav__link:active {
   color: #543cd9;
 }
 
-.home {
-  padding-top: 15rem;
-}
 .home__container {
   display: flex;
-  gap: 20rem;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+.home__name-container {
+  width: 70%;
 }
 .home__link-container {
   margin-top: 3.5rem;
@@ -85,6 +92,28 @@ nav .main-nav__link:hover, nav .main-nav__link:active {
 .link--secondary {
   border: 1px solid #543cd9;
   color: #0A0430;
+}
+
+.about-me h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.about-me__container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+.about-me__text-container {
+  width: 70%;
+}
+.about-me__text {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.about-me__icon {
+  height: 20rem;
 }
 
 /*# sourceMappingURL=style.css.map */

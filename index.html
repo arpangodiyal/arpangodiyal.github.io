@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Learning Web Development</title>
-        <meta charset="UTF-8" />
-        <meta name="author" content="Arpan Godiyal">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="#" class="main-nav__link">home</a></li>
-                    <li><a href="#" class="main-nav__link">about</a></li>
-                    <li><a href="#" class="main-nav__link">work experience</a></li>
-                    <li><a href="#" class="main-nav__link">projects</a></li>
-                    <li><a href="#" class="main-nav__link">contact</a></li>
-                </ul>
-            </nav>
-            <section id="home" class="home">
-                <div class="home__container">
-                    <div class="home__name-container">
-                        <hgroup>
-                            <h1>arpan</h1>
-                            <p class="home__profession">frontend <span class="color-primary">developer</span></p>
-                        </hgroup>
-                        <div class="home__link-container">
-                            <a href=""# class="link link--primary">contact</a>
-                            <a href=""# class="link link--secondary">about</a>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="./img/avatar.svg" alt="Arpan Godiyal avatar" class="avatar">
+
+<head>
+    <title>Learning Web Development</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Arpan Godiyal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#" class="main-nav__link">home</a></li>
+                <li><a href="#" class="main-nav__link">about</a></li>
+                <li><a href="#" class="main-nav__link">experience</a></li>
+                <li><a href="#" class="main-nav__link">projects</a></li>
+                <li><a href="#" class="main-nav__link">contact</a></li>
+            </ul>
+        </nav>
+        <section id="home" class="home section-padding">
+            <div class="home__container">
+                <div class="home__name-container">
+                    <hgroup>
+                        <h1>arpan</h1>
+                        <p class="home__profession">frontend <span class="color-primary">developer</span></p>
+                    </hgroup>
+                    <div class="home__link-container">
+                        <a href="" # class="link link--primary">contact</a>
+                        <a href="" # class="link link--secondary">about</a>
                     </div>
                 </div>
-            </section>
-        </header>
-    </body>
+                <div>
+                    <img src="./img/avatar.svg" alt="Arpan Godiyal avatar" class="avatar">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="about-me" class="about-me section-padding">
+            <div class="about-me__container">
+                <div>
+                    <h2>
+                        about <span class="color-primary">me?</span>
+                    </h2>
+                    <img src="img/about-me.svg " alt="About me" class="about-me__icon">
+                </div>
+                <div class="about-me__text-container">
+                    <p class="about-me__text">
+                        Hello, I have 2+ years of professional experience in frontend development. My day to day tasks
+                        include building pixel perfect and responsive UI screens using HTML & CSS, developing reusable
+                        components using Angular, integrating rest api services, defect fixing, giving client demos etc.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
