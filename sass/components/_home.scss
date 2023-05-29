@@ -1,0 +1,30 @@
+.home {
+  padding-top: 15rem;
+  
+  &__container {
+    display: flex;
+    gap: 20rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link-container {
+    margin-top: 3.5rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: $font-size-xl;
+    line-height: 1;
+  }
+
+  &__profession {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+  }
+
+  .avatar {
+    height: 20rem;
+  }
+}

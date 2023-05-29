@@ -1,0 +1,29 @@
+nav {
+  .main-nav {
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.75rem;
+
+    li {
+      list-style: none;
+    }
+
+    &__link {
+      &:link,
+      &:visited
+      {
+        text-decoration: none;
+        font-weight: $font-weight-semibold;
+        font-size: $font-size-md;
+        color: $color-secondary;
+        transition: all .3s;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-primary;
+      }
+    }
+  }
+}

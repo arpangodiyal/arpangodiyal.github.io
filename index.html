@@ -5,27 +5,36 @@
         <meta charset="UTF-8" />
         <meta name="author" content="Arpan Godiyal">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div role="main">
-            <h1>Learning Web Development</h1>
-            <div role="navigation">
-                <ul>
-                    <li><a href="./accessible-resume/index.html">Accessible Resume</a></li>
-                    <li><a href="./learn-angular/index.html">Learn Angular</a></li>
-                    <li><a href="./a11y-course-project/index.html">A11y course project</a></li>
+        <header>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#" class="main-nav__link">home</a></li>
+                    <li><a href="#" class="main-nav__link">about</a></li>
+                    <li><a href="#" class="main-nav__link">work experience</a></li>
+                    <li><a href="#" class="main-nav__link">projects</a></li>
+                    <li><a href="#" class="main-nav__link">contact</a></li>
                 </ul>
-            </div>
-            <form role="form">
-                <fieldset>
-                    <legend>Personal Details</legend>
-                    <span id="nameLabel">Name</span>
-                    <input type="text" role="text" aria-labelledby="nameLabel">
-                    <span id="emailLabel">Personal Email</span>
-                    <input type="email" role="text" aria-labelledby="emailLabel">
-                </fieldset>
-            </form>
-        </div>
+            </nav>
+            <section id="home" class="home">
+                <div class="home__container">
+                    <div class="home__name-container">
+                        <hgroup>
+                            <h1>arpan</h1>
+                            <p class="home__profession">frontend <span class="color-primary">developer</span></p>
+                        </hgroup>
+                        <div class="home__link-container">
+                            <a href=""# class="link link--primary">contact</a>
+                            <a href=""# class="link link--secondary">about</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./img/avatar.svg" alt="Arpan Godiyal avatar" class="avatar">
+                    </div>
+                </div>
+            </section>
+        </header>
     </body>
 </html>
