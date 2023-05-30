@@ -8,13 +8,9 @@
 
   &__container {
     display: flex;
-    justify-content: center;
-    gap: 3rem;
+    justify-content: space-between;
+    gap: 5rem;
     align-items: center;
-  }
-
-  &__text-container {
-    width: 70%;
   }
 
   &__text {

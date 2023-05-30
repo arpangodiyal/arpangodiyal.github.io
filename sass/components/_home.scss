@@ -2,12 +2,8 @@
   
   &__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-  }
-
-  &__name-container {
-    width: 70%;
   }
 
   &__link-container {
