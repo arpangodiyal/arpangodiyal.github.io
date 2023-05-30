@@ -31,6 +31,12 @@ body {
   padding: 20rem 2rem 0 2rem;
 }
 
+h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
 nav {
   max-width: 65rem;
   margin: 0 auto;
@@ -91,11 +97,6 @@ nav .main-nav__link:hover, nav .main-nav__link:active {
   color: #0A0430;
 }
 
-.about-me h2 {
-  font-size: 3.2rem;
-  font-weight: 600;
-  margin-bottom: 3.2rem;
-}
 .about-me__container {
   display: flex;
   justify-content: space-between;
@@ -108,6 +109,69 @@ nav .main-nav__link:hover, nav .main-nav__link:active {
 }
 .about-me__icon {
   height: 20rem;
+}
+.about-me__social-icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.about-me__social-icon-container .icon-container {
+  display: flex;
+  gap: 2rem;
+}
+.about-me__social-icon-container img {
+  height: 30px;
+}
+
+.skills__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  list-style: none;
+}
+.skills .skill-icon {
+  height: 20rem;
+  fill: #543cd9;
+}
+
+.experience__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: center;
+}
+.experience__container img {
+  height: 20rem;
+}
+.experience__container h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.experience__container .work-duration {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #7f7f7f;
+}
+.experience__container article {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.experience__container .work-detail {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.experience__container .work-detail p {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

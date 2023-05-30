@@ -1,0 +1,21 @@
+.skills {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    font-size: $font-size-md;
+    font-weight: $font-weight-semibold;
+    list-style: none;
+  }
+
+  .skill-icon {
+    height: 20rem;
+    fill: $color-primary;
+  }
+}

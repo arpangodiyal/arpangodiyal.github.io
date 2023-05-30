@@ -1,11 +1,5 @@
 .about-me {
 
-  h2 {
-    font-size: $font-size-lg;
-    font-weight: $font-weight-semibold;
-    margin-bottom: 3.2rem;
-  }
-
   &__container {
     display: flex;
     justify-content: space-between;
@@ -20,5 +14,21 @@
 
   &__icon {
     height: 20rem;
+  }
+
+  &__social-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+
+    .icon-container {
+      display: flex;
+      gap: 2rem;
+    }
+
+    img {
+      height: 30px;
+    }
   }
 }

@@ -1,0 +1,38 @@
+.experience {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    align-items: center;
+
+    img {
+      height: 20rem;
+    }
+
+    h3 {
+      font-weight: $font-weight-semibold;
+      font-size: $font-size-md;
+    }
+
+    .work-duration {
+      font-size: $font-size-sm;
+      font-weight: $font-weight-semibold;
+      color: $color-gray;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .work-detail {
+      font-size: $font-size-md;
+      font-weight: $font-weight-regular;
+      line-height: 1.5;
+      p {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
