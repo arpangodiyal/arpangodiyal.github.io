@@ -1,0 +1,11 @@
+.personal-projects {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .view-all {
+    margin-top: 4.5rem;
+  }
+}
